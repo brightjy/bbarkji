@@ -1,9 +1,18 @@
+import { 
+  BrowserRouter as Router
+  ,Switch
+  ,Route
+ } from "react-router-dom";
+ 
 function App() {
   return (
-    <div>
-      <h1>Hi!</h1>
-      <p>My name is Jiyeong.</p>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <h1>HOME</h1>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
