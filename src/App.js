@@ -1,19 +1,22 @@
+import { useForm } from "react-hook-form";
 import { 
   BrowserRouter as Router
   ,Switch
   ,Route
  } from "react-router-dom";
+import Home from "./routes/Home";
  
-function App() {
+export default function App() {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = data => console.log(data);
+
   return (
     <Router>
       <Switch>
         <Route path="/">
-          <h1>HOME</h1>
+          <Home />
         </Route>
       </Switch>
     </Router>
   );
 }
-
-export default App;
