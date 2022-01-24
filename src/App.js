@@ -1,4 +1,3 @@
-import { useForm } from "react-hook-form";
 import { 
   BrowserRouter as Router
   ,Switch
@@ -7,9 +6,6 @@ import {
 import Home from "./routes/Home";
  
 export default function App() {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = data => console.log(data);
-
   return (
     <Router>
       <Switch>
